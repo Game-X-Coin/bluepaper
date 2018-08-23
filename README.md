@@ -1,3 +1,7 @@
+# Game X Coin Bluepaper v1.0
+
+
+
 # 1. Tokenize your game, monetize your play!
 
 놀이는 인간의 본능이다. 유희하는 인간(Homo Ludens)이라는 말처럼, 인간은 놀이를 향유하며 진화해왔다. 
