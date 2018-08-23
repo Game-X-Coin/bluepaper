@@ -1,7 +1,7 @@
 # Game X Coin Bluepaper v1.0
 
 - [1. Tokenize your game, monetize your play!](#1-tokenize-your-game--monetize-your-play-)
-- [2. GXC Ecosystem](#2-gxc-ecosystem)
+- [2. GXC Ecosystem](#2-GXC-ecosystem)
   * [2.1. Blockchain Game](#21-blockchain-game)
     + [2.1.1. Blockchain as Marketing  - Escrow Pool](#211-blockchain-as-marketing----escrow-pool)
     + [2.1.2. Blockchain as a money - Game blockchain](#212-blockchain-as-a-money---game-blockchain)
@@ -18,9 +18,9 @@
     + [2.3.2. token usage.](#232-token-usage)
       - [2.3.2.1. escrow pool](#2321-escrow-pool)
       - [2.3.2.2. in app use](#2322-in-app-use)
-      - [2.3.2.3. Claim gxc](#2323-claim-gxc)
+      - [2.3.2.3. Claim GXC](#2323-claim-GXC)
       - [2.3.2.4. Sell token](#2324-sell-token)
-    + [2.3.3. GXC usage](#233-gxc-usage)
+    + [2.3.3. GXC usage](#233-GXC-usage)
       - [2.3.3.1. vote for block producers](#2331-vote-for-block-producers)
       - [2.3.3.2 vote for Games](#2332-vote-for-games)
       - [2.3.3.3. buy token](#2333-buy-token)
@@ -34,7 +34,7 @@
   * [3.2. Native Action and System Contract](#32-native-action-and-system-contract)
     + [3.2.1. Make the common case cheap, fast.](#321-make-the-common-case-cheap--fast)
     + [3.2.2. Limitations of EOSIO’s Contract](#322-limitations-of-eosio-s-contract)
-    + [3.2.3. Characteristics of GXC Native Action](#323-characteristics-of-gxc-native-action)
+    + [3.2.3. Characteristics of GXC Native Action](#323-characteristics-of-GXC-native-action)
     + [3.2.4. Native action rule](#324-native-action-rule)
     + [3.2.5. Type of Native Action](#325-type-of-native-action)
       - [3.2.5.1. Game Contract](#3251-game-contract)
@@ -57,16 +57,16 @@
       - [4.1.3.1. parameter](#4131-parameter)
       - [4.1.3.2. 계정정지](#4132-----)
       - [4.1.3.3. abusing game token pause.](#4133-abusing-game-token-pause)
-  * [4.2. GXC holder](#42-gxc-holder)
+  * [4.2. GXC holder](#42-GXC-holder)
     + [4.2.1. Voting](#421-voting)
       - [4.2.1.1. BP투표](#4211-bp--)
       - [4.2.1.2. Game 투표](#4212-game---)
       - [4.2.1.3. Work proposal](#4213-work-proposal)
   * [4.3. inflation](#43-inflation)
 - [5. Products](#5-products)
-  * [5.1. GXC.World](#51-gxcworld)
+  * [5.1. GXC.World](#51-GXCworld)
     + [5.1.1. 게이밍 포탈](#511-------)
-    + [5.1.2. gxc, token, vote, claim](#512-gxc--token--vote--claim)
+    + [5.1.2. GXC, token, vote, claim](#512-GXC--token--vote--claim)
     + [5.1.3. DEX](#513-dex)
   * [5.2. Dev.World](#52-devworld)
     + [5.2.1. 관리공간](#521-----)
@@ -101,7 +101,7 @@ Game X Coin(이하 GXC)은 블록체인을 이용한 이러한 새로운 놀이,
 GXC Ecosystem은 게임과 블록체인을 결합하여, 게임사는 더 좋은 게임을 만들어 GXCIO와 결합할 유인을, 유저는 게임을 지속적으로 플레이할 유인을, 그리고 GXC 보유자는 GXC를 보유하여 생태계를 계속 만들어나갈 유인을 제공해준다.
 게임사는 GXCIO에 게임을 등록하고, 게임에 사용될 토큰을 발행한다. 이 토큰의 발행 및 유통은 GXCIO에 기록된다. 토큰은 게임사가 지정한 이벤트에 따라 유저에게 배분되고, 유저는 획득한 토큰을 GXC로 바꾸거나, 게임 내에서 소비할 수 있다.
 
-게이머는 gxc.world(5.1) 를 통해 본인이 Staking한 GXC를 이용, 게임을 평가할 수 있다. 이 평가는 일정 기간마다 집계되며, 전체 Claim 대비 본인의 Claim 비율에 따라 GXC를 얻게 된다.  
+게이머는 GXC.world(5.1) 를 통해 본인이 Staking한 GXC를 이용, 게임을 평가할 수 있다. 이 평가는 일정 기간마다 집계되며, 전체 Claim 대비 본인의 Claim 비율에 따라 GXC를 얻게 된다.  
 
 ## 2.1. Blockchain Game
 
@@ -151,11 +151,12 @@ GXCIO에서 GXC는 정해진 비율에 따라(4.3) 지속적으로 발행되는�
 
 ## 2.2. Game Developer
 
-게임 개발자는 게임 세계를 창조하고, 로직을 기획하는 주체이다. 개발자는 GXCIO에 게임을 등록하고, 게임에 사용될 토큰을 발행한다.이들은 게임이 어떻게 GXC와 결합될지를 결정하고, 유저는 그 결합의 형태를 스마트 컨트랙트를 통해 확인가능하다.
+게임 개발자는 게임 세계를 창조하고, 로직을 기획하는 주체이다. 개발자는 GXCIO에 게임을 등록하고, 게임에 사용될 토큰을 발행한다.이들은 게임이 어떻게 GXCIO와 결합될지를 결정하고, 유저는 그 결합의 형태를 스마트 컨트랙트를 통해 확인가능하다.
  
 ### 2.2.1. Register game
 
-GXCIO에 연동을 원하는 개발자는 게임을 GXCIO에 등록하여야 한다. 이 등록은 컨트랙트를 통해 블록체인에 기록되며 게임사는 직접 컨트랙을 콜하거나, Developer console(5.2)을 통해 등록할 수 있다.
+
+IO에 연동을 원하는 개발자는 게임을 GXCIO에 등록하여야 한다. 이 등록은 컨트랙트를 통해 블록체인에 기록되며 게임사는 직접 컨트랙을 콜하거나, Developer console(5.2)을 통해 등록할 수 있다.
 
 ### 2.2.2. Issue  Token
 
@@ -191,13 +192,13 @@ GXCIO에 연동을 원하는 개발자는 게임을 GXCIO에 등록하여야 한
 
 게임사는 토큰을 사용할 수 있는 용처를 게임 내에 디자인할 수 있다. (예 : ‘태양의 직검’ 구매, ‘KAI’ 보스방 출입권 구매, 게임 이용 시간 등) 유저는 토큰을 사용하여 이러한 재화를 구매가능하고, 게임사는 게이머에게 분배된 토큰을 회수할 수 있다.
 
-#### 2.3.2.3. Claim gxc
+#### 2.3.2.3. Claim GXC
 
-인플레이션으로 발생한 GXC의 일부는 게임의 인기에 따라 각 게임의 Reserve 풀에 등록이 되고, 게이머는 본인이 얻은 토큰을 통해 Reserve 풀에 등록된 코인을 Claim할 수 있다. 이는 게임사가 디자인한 토큰 이코노미를 넘어선 토큰의 사용처이며, GXC 네트워크 확장에 가장 큰 요소가 될 것이다.
+인플레이션으로 발생한 GXC의 일부는 게임의 인기에 따라 각 게임의 Reserve 풀에 등록이 되고, 게이머는 본인이 얻은 토큰을 통해 Reserve 풀에 등록된 코인을 Claim할 수 있다. 이는 게임사가 디자인한 토큰 이코노미를 넘어선 토큰의 사용처이며, GXCIO 네트워크 확장에 가장 큰 요소가 될 것이다.
 
 #### 2.3.2.4. Sell token
 
-게이머는 GXC 탈중앙화 거래소를를 이용하여 자신이 획득한 토큰을 즉각적으로 GXC와 교환할 수 있다. 이는 시스템에 내재된 방식이 아닌, p2p거래를 통해 GXC를 얻을 수 있는 방법이며 2.3.2.1과 2.3.2.3의 행위와 함께 토큰의 실제 GXC와의 교환비를 생성해갈 것이다. 
+게이머는 GXCIO 탈중앙화 거래소를를 이용하여 자신이 획득한 토큰을 즉각적으로 GXC와 교환할 수 있다. 이는 시스템에 내재된 방식이 아닌, p2p거래를 통해 GXC를 얻을 수 있는 방법이며 2.3.2.1과 2.3.2.3의 행위와 함께 토큰의 실제 GXC와의 교환비를 생성해갈 것이다. 
 
 ### 2.3.3. GXC usage
 
@@ -205,7 +206,7 @@ GXCIO에 연동을 원하는 개발자는 게임을 GXCIO에 등록하여야 한
 
 #### 2.3.3.1. vote for block producers
 
-GXCIO는 DPoS 합의 알고리즘을 통해 체인을 생성하며, 이는 필수적으로 block을 생산할 block producer들을 뽑는 절차를 필요로 한다. gxc를 보유한 홀더는 투표를 통해 누가 block 을 생성할지를 의사표현할 수 있다. 해당 사안은 Governance(4.1) 장에서 추가로 기술한다.
+GXCIO는 DPoS 합의 알고리즘을 통해 체인을 생성하며, 이는 필수적으로 block을 생산할 block producer들을 뽑는 절차를 필요로 한다. GXC를 보유한 홀더는 투표를 통해 누가 block 을 생성할지를 의사표현할 수 있다. 해당 사안은 Governance(4.1) 장에서 추가로 기술한다.
 
 #### 2.3.3.2 vote for Games
 
@@ -223,7 +224,7 @@ GXCIO 는  자체적으로 gamification(2.1.2) 에 해당하는 로직을 가지
 
 싱글 게임과 GXC와의 연동이 가능하다. Game의 부분유료화 모델을 GXC 토큰으로 대체할 수 있으며, 이를 통해 개발자는 In App Purchase에 부담되는 수수료를 0에 가깝게 누릴 수 있다. 
 
-이런 모델을 적용한 예시로, Game X Jelly를 들 수 있다(https://play.google.com/store/apps/details?id=com.gxc.gamexjelly).  Game X Jelly는 모바일에서 구동하는 싱글 게임이며, In app purchase로 구매가능한 재화인 JLY를 gxc token으로 구현하였다. JLY는 게임에서 특정 이벤트를 해결할 시 유저에게 발급이되며, 해당 JLY를 통해 새로운 시나리오를 오픈하거나, 탈중앙화 거래소 거래를 통해 GXC와 교환할 수 있다.
+이런 모델을 적용한 예시로, Game X Jelly를 들 수 있다(https://play.google.com/store/apps/details?id=com.GXC.gamexjelly).  Game X Jelly는 모바일에서 구동하는 싱글 게임이며, In app purchase로 구매가능한 재화인 JLY를 GXC token으로 구현하였다. JLY는 게임에서 특정 이벤트를 해결할 시 유저에게 발급이되며, 해당 JLY를 통해 새로운 시나리오를 오픈하거나, 탈중앙화 거래소 거래를 통해 GXC와 교환할 수 있다.
 
 ### 2.4.2. Multiplay Game
 
@@ -242,7 +243,7 @@ GXCQuest와 Game X Rogue는 웹 MMORPG이며, 각 게임은 GXC네트워크에�
 
 Block Producer는 GXCIO가 동작가능케 하고, BP들의 투표를 통해 GXCIO의 주요 의사결정을 진행한다. 이들은 이런 행위에 대한 대가로 GXC를 얻으며, 성실히, 공정히 해당 직무를 수행할 유인을 갖게 된다.
 
-게임 개발자는 GXCIO에 게임을 등록하고, token을 발행, 지급, 소모하는 룰을 게임에서 제공한다. 이들은 GXCIO의 유저를 자기의 게임에 끌어들일 수 있으며, GXCIO gamification(2.1.2.1)은 이를 더 잘 일어날 수 있게 해준다. 또한 gxc를 이용하여 In App Purchase, Game sell 기능을 구현, 0에 가까운 수수료로 수익을 얻게 된다.
+게임 개발자는 GXCIO에 게임을 등록하고, token을 발행, 지급, 소모하는 룰을 게임에서 제공한다. 이들은 GXCIO의 유저를 자기의 게임에 끌어들일 수 있으며, GXCIO gamification(2.1.2.1)은 이를 더 잘 일어날 수 있게 해준다. 또한 GXC를 이용하여 In App Purchase, Game sell 기능을 구현, 0에 가까운 수수료로 수익을 얻게 된다.
 
 게이머는 게임을 플레이하여 토큰을 획득, 획득한 토큰을 다양한 방법을 통해 GXC 교환이 가능하고, 그 반대도 가능하다. 게이머는 본인이 원하는 바에 따라 GXC 및 토큰을 활용할 수 있다. 
 
@@ -344,7 +345,7 @@ GXCIO는 누구든지 들어오고 나가는 것이 자유로운 퍼블릭 블�
 ## 4.1. Block Producer
 ### 4.1.1. 구성
 
-최초의 BP는 13개로 구성되며, 6개월마다 2개씩 추가되어 최종적으로 21개까지 늘어난다. GXC holder들의 투표로 BP는 선출되며, BP로 선출되지 못한 후보군들은 예비 BP가 되어 BP가 그 역할을 제대로 수행하지 못했을 때 대체 BP의 역할을 한다. 게임 블록체인이라는 특성상 실제 게임을 GXC상에서 구동하는 개발사의 BP참여의 기회를 보장하기 위하여, BP 투표중 50% 정도를 개발사가 가져가도록 유도하고자 한다. 이를 위해 전체 BP의 절반 가까이 - (n -1) / 2 는 일정 수량의 gxc를 에스크로 풀에 예치하여 발행한 게임사 중에서 선정하는 걸로 한다.
+최초의 BP는 13개로 구성되며, 6개월마다 2개씩 추가되어 최종적으로 21개까지 늘어난다. GXC holder들의 투표로 BP는 선출되며, BP로 선출되지 못한 후보군들은 예비 BP가 되어 BP가 그 역할을 제대로 수행하지 못했을 때 대체 BP의 역할을 한다. 게임 블록체인이라는 특성상 실제 게임을 GXC상에서 구동하는 개발사의 BP참여의 기회를 보장하기 위하여, BP 투표중 50% 정도를 개발사가 가져가도록 유도하고자 한다. 이를 위해 전체 BP의 절반 가까이 - (n -1) / 2 는 일정 수량의 GXC를 에스크로 풀에 예치하여 발행한 게임사 중에서 선정하는 걸로 한다.
 
 ### 4.1.2. 역할
 #### 4.1.2.1. 블록생성
@@ -408,9 +409,9 @@ GXC는 정해진 inflation양에 따라 지속적으로 발행되며, 이 발행
 
 게이머는 GXC.World를 통해 게임에 관한 기능을 수행할 수 있다. 자신이 플레이한 게임을 확인하고, 자산을 조회할뿐더러, 새로나온 게임이 어떤 것이며, 현재 인기 있는 게임, 평점이 높은 게임, 내가 좋아할 것 같은 게임을 조회하고, 플레이하고, 구매할 수 있다. 
 
-### 5.1.2. gxc, token, vote, claim
+### 5.1.2. GXC, token, vote, claim
 
-게이머는 획득한 gxc 및 token을 확인하고, 이를 활용할 수 있다. 게이머는 특정 게임에 투표할 수 있으며, 에스크로 풀 및 reserve 풀에 보관된 gxc를 토큰을 통해 획득할 수 있다.
+게이머는 획득한 GXC 및 token을 확인하고, 이를 활용할 수 있다. 게이머는 특정 게임에 투표할 수 있으며, 에스크로 풀 및 reserve 풀에 보관된 GXC를 토큰을 통해 획득할 수 있다.
 
 ### 5.1.3. DEX
 
@@ -431,7 +432,7 @@ GXCIO와 연동된 게임을 개발하기 위해선 이를 위한 sdk가 필수�
 
 ## 5.3. Chain.World 
 
- Chain.World는 블록체인 정보를 쉽게 조회할 수 있는 공간이다. block의 생성, 현재 라운드의 BP 및 예비 BP 목록, block 및 transaction 조회가 가능하다. 또한 게임 및 토큰의 등록, gxc 와 토큰의 이동 등의 정보들도 쉽게 조회가 가능하다.
+ Chain.World는 블록체인 정보를 쉽게 조회할 수 있는 공간이다. block의 생성, 현재 라운드의 BP 및 예비 BP 목록, block 및 transaction 조회가 가능하다. 또한 게임 및 토큰의 등록, GXC 와 토큰의 이동 등의 정보들도 쉽게 조회가 가능하다.
 
 # 6. Summary
 
