@@ -1,7 +1,7 @@
 # Game X Coin Bluepaper v1.0
 
 - [1. Tokenize your game, monetize your play!](#1-tokenize-your-game--monetize-your-play-)
-- [2. Game X Coin Ecosystem](#2-GXC-ecosystem)
+- [2. Game X Coin Ecosystem](#2-game-x-coin-ecosystem)
   * [2.1. Blockchain Game](#21-blockchain-game)
     + [2.1.1. Blockchain as Marketing  - Escrow Pool](#211-blockchain-as-marketing----escrow-pool)
     + [2.1.2. Blockchain as a money - Game blockchain](#212-blockchain-as-a-money---game-blockchain)
@@ -12,15 +12,15 @@
     + [2.2.1. Register game](#221-register-game)
     + [2.2.2. Issue  Token](#222-issue--token)
     + [2.2.3. Register Event](#223-register-event)
-      - [2.2.4. Token management](#224-token-management)
+    + [2.2.4. Token management](#224-token-management)
   * [2.3. Gamer](#23-gamer)
     + [2.3.1. play game, get token](#231-play-game--get-token)
     + [2.3.2. token usage.](#232-token-usage)
       - [2.3.2.1. escrow pool](#2321-escrow-pool)
       - [2.3.2.2. in app use](#2322-in-app-use)
-      - [2.3.2.3. Claim GXC](#2323-claim-GXC)
+      - [2.3.2.3. Claim GXC](#2323-claim-gxc)
       - [2.3.2.4. Sell token](#2324-sell-token)
-    + [2.3.3. GXC usage](#233-GXC-usage)
+    + [2.3.3. GXC usage](#233-gxc-usage)
       - [2.3.3.1. vote for block producers](#2331-vote-for-block-producers)
       - [2.3.3.2 vote for Games](#2332-vote-for-games)
       - [2.3.3.3. buy token](#2333-buy-token)
@@ -34,7 +34,7 @@
   * [3.2. Native Action and System Contract](#32-native-action-and-system-contract)
     + [3.2.1. Make the common case cheap, fast.](#321-make-the-common-case-cheap--fast)
     + [3.2.2. Limitations of EOSIO’s Contract](#322-limitations-of-eosio-s-contract)
-    + [3.2.3. Characteristics of GXC Native Action](#323-characteristics-of-GXC-native-action)
+    + [3.2.3. Characteristics of GXC Native Action](#323-characteristics-of-gxc-native-action)
     + [3.2.4. Native action rule](#324-native-action-rule)
     + [3.2.5. Type of Native Action](#325-type-of-native-action)
       - [3.2.5.1. Game Contract](#3251-game-contract)
@@ -57,16 +57,17 @@
       - [4.1.3.1. parameter](#4131-parameter)
       - [4.1.3.2. 계정정지](#4132-----)
       - [4.1.3.3. abusing game token pause.](#4133-abusing-game-token-pause)
-  * [4.2. GXC holder](#42-GXC-holder)
+  * [4.2. GXC holder](#42-gxc-holder)
     + [4.2.1. Voting](#421-voting)
       - [4.2.1.1. BP투표](#4211-bp--)
       - [4.2.1.2. Game 투표](#4212-game---)
-      - [4.2.1.3. Work proposal](#4213-work-proposal)
-  * [4.3. inflation](#43-inflation)
+  * [4.3. Work proposal](#43-work-proposal)
+  * [4.4. inflation](#44-inflation)
+    + [4.4.1 inflation의 분배](#441-inflation----)
 - [5. Products](#5-products)
-  * [5.1. GXC.World](#51-GXCworld)
-    + [5.1.1. 게이밍 포탈](#511-------)
-    + [5.1.2. GXC, token, vote, claim](#512-GXC--token--vote--claim)
+  * [5.1. GXC.World](#51-gxcworld)
+    + [5.1.1. wallet](#511-wallet)
+    + [5.1.2. 게이밍 포탈](#512-------)
     + [5.1.3. DEX](#513-dex)
   * [5.2. Dev.World](#52-devworld)
     + [5.2.1. 관리공간](#521-----)
@@ -170,11 +171,9 @@ IO에 연동을 원하는 개발자는 게임을 GXCIO에 등록하여야 한다
 
 게임사는 토큰이 얼마나 발행됬고, 얼마나 Claim 됬으며, 얼마나 Burn 됐는지를 실시간으로 확인할 수 있다. 이를 통해 앞으로의 토큰 발행 및 회수에 대한 계획을 통해 게임의 토큰 이코노미를 지속적으로 잘 돌아가게 할 수 있다. 
 
-
 ## 2.3. Gamer
 
 게이머는 GXCIO에 등록된 게임을 플레이하고, Token 및 GXC를 획득하고, 획득한 GXC로 게임 투표, In App Purchase, 게임 구매 등의 행위를 하여 GXCIO를 더욱 풍성하게 하는 주체이다.
-
 
 ### 2.3.1. play game, get token
 
@@ -222,7 +221,7 @@ GXCIO 는  자체적으로 gamification(2.1.2) 에 해당하는 로직을 가지
 
 ### 2.4.1. Single Game
 
-싱글 게임과 GXC와의 연동이 가능하다. Game의 부분유료화 모델을 GXC 토큰으로 대체할 수 있으며, 이를 통해 개발자는 In App Purchase에 부담되는 수수료를 0에 가깝게 누릴 수 있다. 
+싱글 게임과 GXCIO와의 연동이 가능하다. Game의 부분유료화 모델을 GXC 토큰으로 대체할 수 있으며, 이를 통해 개발자는 In App Purchase에 부담되는 수수료를 0에 가깝게 누릴 수 있다. 
 
 이런 모델을 적용한 예시로, Game X Jelly를 들 수 있다(https://play.google.com/store/apps/details?id=com.GXC.gamexjelly).  Game X Jelly는 모바일에서 구동하는 싱글 게임이며, In app purchase로 구매가능한 재화인 JLY를 GXC token으로 구현하였다. JLY는 게임에서 특정 이벤트를 해결할 시 유저에게 발급이되며, 해당 JLY를 통해 새로운 시나리오를 오픈하거나, 탈중앙화 거래소 거래를 통해 GXC와 교환할 수 있다.
 
@@ -234,7 +233,7 @@ GXCQuest와 Game X Rogue는 웹 MMORPG이며, 각 게임은 GXC네트워크에�
 
 ### 2.4.3. Crypto Game
 
-게임 내 화폐뿐만이 아닌 재화 - 아이템, 캐릭터 등 -, 재화를 넘어서 게임 로직까지 블록체인에 올라간 Crypto Game도 생각해볼 수 있다. Crypto Kitties나, Zombie battle ground, web 땅따먹기 게임류는 재화 및 게임 로직까지 GXC에 올려 게임을 진행할 수 있으며, 더 나아가 이브 온라인같은 큰 대규모의 MMORPG도 크립토 이코노미를 적용하여 GXCIO 에 올릴 수 있을 것이다. 
+게임 내 화폐 이외의 아이템, 케릭터 등의 재화가 GXCIO에 올라간 형태도 구현 가능하다. 이는 인 게임 로직까지  GXCIO의 Smart Contract를 통해 구현한 형태일 수 있다. 이를 통해 게임 내의 아이템 생성 로직, 갓챠 확률 등을 유저에게 투명하게 공개할 수 있으며, 이 자체가 하나의 token economy를 구성할 것이다. 이러한 형태로는 Crypto Kitties나, Zombie Battle Ground, web 땅따먹기 게임류를 생각해 볼 수 있으며 이브 온라인 같은 재화 자체가 현금 가치과 굉장히 큰 대규모의 MMORPG도 크립토 이코노미를 적용하여 GXCIO 에 올릴 수 있을 것이다. 
 
 
 ## 2.5. Token Economy
@@ -319,7 +318,7 @@ Native Action의 자원 사용은 3.2에서 밝힌 방법들을 통해 굉장히
 ### 3.3.1. Permission
 
 ![](https://user-images.githubusercontent.com/1560710/44506433-665ca480-a6e1-11e8-94aa-51416d79e344.png)
-개발자는 유저에게 자신의 게임에서 사용되는 자산에 대한 권한을 유저에게 요청할 수 있다. 이 권한은 유저의 의중에 따라 언제든 발행 및 회수가 가능하다. 이를 통해 유저는 게임 플레이 도중 UX/UI의 전환없이 게임을 즐기면서, 게임사에게 필요한 만큼의 권한만을 제공하여 혹시 모를 자산권의 침해를 최소화할 수 있다. 
+개발자는 유저에게 자신의 게임에서 사용되는 자산에 대한 권한을 유저에게 요청할 수 있다. 이 권한은 유저의 의중에 따라 언제든 발행 및 회수가 가능하다. 이를 통해 유저는 최소한의 권한만을 게임사에게 위임하여 게임 플레이 도중 UX/UI의 전환없이 게임을 즐길 수 있고, 혹시 모를 자산권의 침해 - 게임사의 해킹으로 인한 키노출 - 를 최소화할 수 있다. 
 
 ### 3.3.2. Anonymous account
 
@@ -388,14 +387,16 @@ Voting은 GXC를 Staking한 유저라면 누구든지 참여가능하며, 각각
 
 유저는 플레이한 기록이 된 게임에 대해 투표를 할 수 있다. 이 투표의 결과를 정해진 산술을 통해 게임별로 순위가 메겨지며, 이 순위에 따라 4.3의 inflation. Gaming 보상이 게임별로 차등 지급된다. 게임 순위로직은 1) 투표에 참여한 유저 수 2) Staking된 GXC의 양 3) 이전 라운드 순위 등을 변수로 하여 정해진다. 
 
-#### 4.2.1.3. Work proposal
+## 4.3. Work proposal
 
 GXCIO가 게임 블록체인으로 지속적으로 성장하기 위해선 블록체인과 이를 활용한 product의 지속적인 개발 및 발전이 있어야 한다. Work proposal은 이러한 선순환이 가능하게 하기 위한 구조이며, 기본적으로 dash proposal(https://proposal.dash.org/) 의 형태를 가질 것이다. 
 
-## 4.3. inflation
+## 4.4. inflation
 
 GXC는 정해진 inflation양에 따라 지속적으로 발행되며, 이 발행된 양은 네트워크 관계자들에게 분배된다. 최초의 inflation율은 5%정도로 설정되며 이 inflation율은 BP들의 논의를 통해 조절될 수 있다. 
-5%의 inflation은 BP보상, Vote 보상, Gaming 보상 및 Work Proposal 보상으로 나누어서 분배되며 각 보상률은 1%, 1%, 2%, 1%로 초기 설정된다
+### 4.4.1 inflation의 분배
+
+inflation은 네트워크에 기여한 관계자들에게 분배된다. 분배의 로직 및 수치는 운영 중에 BP들의 합으로 변경이 가능하다. 보상은 Block Producing의 역할을 한 BP에 대한 보, 4.2.1.의 Voting에 대한 보상, 2.1.2.1의 게임 투표에 결과에 의한 보상, 4.3의 GXCIO의 발전을 위한 Work Proposal 보상으로 나뉘며, 초기 보상률은 각 보상에 대해 1%, 1%, 2%, 1%(전체 5% 기준)으로 구성된다.
 
 # 5. Products
 
