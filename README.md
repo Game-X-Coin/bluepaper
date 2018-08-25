@@ -22,7 +22,7 @@
       - [2.3.2.4. Sell Token](#2324-sell-token)
     + [2.3.3. GXC Usage](#233-gxc-usage)
       - [2.3.3.1. Vote for Block Producers](#2331-vote-for-block-producers)
-      - [2.3.3.2 Vote for Games](#2332-vote-for-games)
+      - [2.3.3.2. Vote for Games](#2332-vote-for-games)
       - [2.3.3.3. Buy Token](#2333-buy-token)
     + [2.4. Game Use Case](#24-game-use-case)
     + [2.4.1. Single Play Game](#241-single-play-game)
@@ -44,6 +44,7 @@
     + [3.2.7. 예외 상황에 대한 컨트롤](#327--------------)
   * [3.3. Accounts](#33-accounts)
     + [3.3.1. Permission](#331-permission)
+    + [3.3.2. Anonymous Account](#332-anonymous-account)
   * [3.4. Make the rare case correct.](#34-make-the-rare-case-correct)
   * [3.5. Sidechain](#35-sidechain)
 - [4. Governance](#4-governance)
@@ -73,6 +74,9 @@
     + [5.2.2. 개발 도구](#522------)
   * [5.3. Chain.World](#53-chainworld)
 - [6. Summary](#6-summary)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 # 1. Tokenize your game, Monetize your play!
 
@@ -208,7 +212,7 @@ Inflation으로 발생한 GXC의 일부는 게임의 인기에 따라 각 게임
 
 GXCIO는 DPoS 합의 알고리즘을 통해 체인을 생성하며, 이는 필수적으로 Block을 생산할 Block Producer들을 뽑는 절차를 필요로 한다. GXC를 보유한 홀더는 투표를 통해 누가 Block을 생성할 지에 대해 의사표현할 수 있다. 해당 사안은 Governance(4.1) 장에서 추가로 기술한다.
 
-#### 2.3.3.2 Vote for Games
+#### 2.3.3.2. Vote for Games
 
 GXCIO는 자체적으로 Gamification(2.1.2)에 해당하는 로직을 가지고 있는데, 이것이 동작하게 하는 가장 큰 요소는 Game에 대한 Voting이다. GXC 홀더 및 게이머는 어떤 게임이 가장 재미 있는 지를 투표할 수 있고, 이 투표 결과에 따라 게임 Reserve Pool에 할당되는 GXC가 결정된다.
 
@@ -395,7 +399,7 @@ GXCIO가 게임 블록체인으로 지속적으로 성장하기 위해선 블록
 
 GXC는 정해진 inflation양에 따라 지속적으로 발행되며, 이 발행된 양은 네트워크 관계자들에게 분배된다. 최초의 inflation율은 5%로 설정되며 이 inflation율은 BP들의 논의를 통해 조절 될 수 있다.
 
-### 4.4.1 inflation의 분배
+### 4.4.1. inflation의 분배
 
 inflation은 네트워크에 기여한 관계자들에게 분배된다. 분배의 로직 및 수치는 운영 중에 BP들의 합의로 변경이 가능하다. 보상은 Block Producing에 대한 BP에 대한 보상, 4.2.1.의 Voting에 대한 보상, 2.1.2.1의 게임 투표에 결과에 의한 보상, 4.3의 GXCIO의 발전을 위한 Work Proposal 보상으로 나뉘며, 초기 보상률은 각 보상 당 1%, 1%, 2%, 1%(전체 5% 기준)으로 구성된다.
 
