@@ -62,8 +62,8 @@
       - [4.2.1.1. Voting for Block Producers](#4211-voting-for-block-producers)
       - [4.2.1.2. Voting for Games](#4212-voting-for-games)
   * [4.3. Work Proposal](#43-work-proposal)
-  * [4.4. Inflation](#44-inflation)
-    + [4.4.1 inflation의 분배](#441-inflation----)
+  * [4.4. Inflation](#44-Inflation)
+    + [4.4.1 Inflation의 분배](#441-Inflation----)
 - [5. Products](#5-products)
   * [5.1. GXC.World](#51-gxcworld)
     + [5.1.1. Wallet](#511-wallet)
@@ -337,7 +337,7 @@ GXCIO는 OS이며, 앞에서 말한 Native Action외의 스마트 컨트랙트�
 
 초기 GXCIO는 메인체인만을 이용해 구성되며, 수십의 게임과 토큰을 지원하기에 충분하다. 하지만 더 많은 게임이 GXCIO와 결합되고, 더 많은 유저들이 네트워크에 들어오면 메인체인만으로는 감당이 힘들어지는 단계에 다다를 것이다.
 
-GXCIO는 sidechain을 활용하여 확장성 문제를 해결하려고 한다. GXCIO 생태계는 복수의 게임의 트랜잭션으로 이루어지고, 하나하나의 게임은 하나의 계를 이루는 구조로 볼 수 있다. 이는 다수의 블록체인에서 정의하는 Sidechain으로 동작하기 ‘개념적으로' 잘 들어맞는다. 또한 Sidechain을 통해 좀 더 유연한 구조의 게임 -  2.1.3에서 보여주는 - 을 적합하게 만들 수 있을 것이다.
+GXCIO는 Sidechain을 활용하여 확장성 문제를 해결하려고 한다. GXCIO 생태계는 복수의 게임의 트랜잭션으로 이루어지고, 하나하나의 게임은 하나의 계를 이루는 구조로 볼 수 있다. 이는 다수의 블록체인에서 정의하는 Sidechain으로 동작하기 ‘개념적으로' 잘 들어맞는다. 또한 Sidechain을 통해 좀 더 유연한 구조의 게임 -  2.1.3에서 보여주는 - 을 적합하게 만들 수 있을 것이다.
 
 GXC팀은 다양한 방식의 Sidechain을 염두에 두고 있으며 - 현재는 Escrow Pool과 밀접한 관련이 있는 Plasma 및 Plasmacash 를 이용한 방식을 염두에 두고 있다 - 그 구현 양식 및 방법으로는 “GXCIO에 잘 어울리고", “더 게임에 잘 어울리는" 방식을 채용하여 이를 구현하고자 한다.
 
@@ -365,7 +365,7 @@ BP들은 GXCIO의 많은 값들에 대해 논의하고, 변경할 권한을 가�
 
 #### 4.1.3.1. Parameter
 
-GXCIO의 많은 장치들에서 파라미터는 - 가령 inflation율이라든가 - 네트워크 관계자에게 많은 영향을 끼친다. BP의 합의를 통해, 해당 파라미터의 수치는 변경될 수 있다. 
+GXCIO의 많은 장치들에서 파라미터는 - 가령 Inflation율이라든가 - 네트워크 관계자에게 많은 영향을 끼친다. BP의 합의를 통해, 해당 파라미터의 수치는 변경될 수 있다. 
 
 #### 4.1.3.2. 계정정지
 
@@ -397,11 +397,11 @@ GXCIO가 게임 블록체인으로 지속적으로 성장하기 위해선 블록
 
 ## 4.4. Inflation
 
-GXC는 정해진 inflation양에 따라 지속적으로 발행되며, 이 발행된 양은 네트워크 관계자들에게 분배된다. 최초의 inflation율은 5%로 설정되며 이 inflation율은 BP들의 논의를 통해 조절 될 수 있다.
+GXC는 정해진 Inflation양에 따라 지속적으로 발행되며, 이 발행된 양은 네트워크 관계자들에게 분배된다. 최초의 Inflation율은 5%로 설정되며 이 Inflation율은 BP들의 논의를 통해 조절 될 수 있다.
 
-### 4.4.1. inflation의 분배
+### 4.4.1. Inflation의 분배
 
-inflation은 네트워크에 기여한 관계자들에게 분배된다. 분배의 로직 및 수치는 운영 중에 BP들의 합의로 변경이 가능하다. 보상은 Block Producing에 대한 BP에 대한 보상, 4.2.1.의 Voting에 대한 보상, 2.1.2.1의 게임 투표에 결과에 의한 보상, 4.3의 GXCIO의 발전을 위한 Work Proposal 보상으로 나뉘며, 초기 보상률은 각 보상 당 1%, 1%, 2%, 1%(전체 5% 기준)으로 구성된다.
+Inflation은 네트워크에 기여한 관계자들에게 분배된다. 분배의 로직 및 수치는 운영 중에 BP들의 합의로 변경이 가능하다. 보상은 Block Producing에 대한 BP에 대한 보상, 4.2.1.의 Voting에 대한 보상, 2.1.2.1의 게임 투표에 결과에 의한 보상, 4.3의 GXCIO의 발전을 위한 Work Proposal 보상으로 나뉘며, 초기 보상률은 각 보상 당 1%, 1%, 2%, 1%(전체 5% 기준)으로 구성된다.
 
 # 5. Products
 
