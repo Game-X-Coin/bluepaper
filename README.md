@@ -1,104 +1,111 @@
-# Game X Coin Bluepaper v1.1
+# GameXCoin Blue Paper v1.2
 
-- [1. Tokenize your game, Monetize your play!](#1-tokenize-your-game--monetize-your-play-)
+2018년 10월 O일
+
+GameXCoin은 게임과 잘 결합*well-integrated* 할 수 있도록 설계된 새로운 블록체인 플랫폼이다. 다양한 탈중앙화 애플리케이션 구동을 위해 설계된 범용 목적의 블록체인과 달리 GameXCoin 블록체인은 게임과 결합하였을 때 최상의 성능과 결과물을 낼 수 있도록 작성되었으며 게임 성능에 영향을 미칠 수 있는 기능은 제한될 수 있다. GameXCoin과 결합된 게임을 작성하는 제작자는 블록체인에 대한 이해 없이도 제공되는 SDK를 활용하여 게임에 블록체인 요소를 도입할 수 있다. 블록 생성자와 GXC 보유자는 네트워크 유지에 기여한 대가로 보상을 받으며 게임 유저는 플레이를 통한 토큰 획득, 게임 투표 참여 등을 통해 네트워크를 성장 시키고 블록체인과 게임을 결합하여 갖게 되는 장점의 직접적인 수혜자가 된다. GameXCoin은 메인넷 런칭 단계에서 완성 및 개발이 종료되는 플랫폼이 아니라 블록체인 기술 성장에 따라 변화해가는 지속 발전형 플랫폼이다.
+
+Copyright © 2018 블록체인벤처스
+
+> **Disclaimer:** 본 GameXCoin 청서*blue paper*는 GameXCoin의 로드맵, 기능에 관한 정보 제공을 위해 작성하였으며 참고 목적으로만 사용해야 합니다. 청서는 투자를 권유하고 있지 않으며 이러한 목적과 전혀 무관함을 분명히 밝힙니다. 청서는 작성 당시의 상태를 기준(AS-IS)으로 작성하였으며, 청서에 작성된 내용이 백서*white paper*나 홈페이지에서 제공하는 내용과 다른 경우 청서 내용이 우선함을 원칙으로 합니다. 블록체인벤처스는 독자가 이 청서를 읽는 시점 및 그 장래에 대해 로드맵에 계획된 GameXCoin 프로젝트의 결론, 일정, 성과를 포함하여 청서상에 기재된 어떠한 내용에 관하여도 그 내용이 정확하거나 적절함을 보증하지 않습니다. 청서는 블록체인벤처스의 정책 또는 의사결정에 따라 내용이 변경될 수 있습니다.
+
+- [GameXCoin Blue Paper v1.2](#gamexcoin-blue-paper-v12)
+- [배경](#%EB%B0%B0%EA%B2%BD)
 - [2. GameXCoin Ecosystem](#2-gamexcoin-ecosystem)
-  * [2.1. Blockchain Game](#21-blockchain-game)
-    + [2.1.1. Blockchain as Marketing  - Escrow Pool](#211-blockchain-as-marketing----escrow-pool)
-    + [2.1.2. Blockchain as Money - Game Blockchain](#212-blockchain-as-money---game-blockchain)
+  - [2.1. Blockchain Game](#21-blockchain-game)
+    - [2.1.1. Blockchain as Marketing - Escrow Pool](#211-blockchain-as-marketing---escrow-pool)
+    - [2.1.2. Blockchain as Money - Game Blockchain](#212-blockchain-as-money---game-blockchain)
       - [2.1.2.1. Gaming as Mining](#2121-gaming-as-mining)
-    + [2.1.3. Blockchain as Governance - Blockchain Game](#213-blockchain-as-governance---blockchain-game)
-    + [2.1.4. Summary](#214-summary)
-  * [2.2. Game Developer](#22-game-developer)
-    + [2.2.1. Register Game](#221-register-game)
-    + [2.2.2. Issue  Token](#222-issue--token)
-    + [2.2.3. Register Event](#223-register-event)
-    + [2.2.4. Token Management](#224-token-management)
-  * [2.3. Gamer](#23-gamer)
-    + [2.3.1. Play Game, Get Tokens](#231-play-game--get-tokens)
-    + [2.3.2. Token Usage](#232-token-usage)
+    - [2.1.3. Blockchain as Governance - Blockchain Game](#213-blockchain-as-governance---blockchain-game)
+    - [2.1.4. Summary](#214-summary)
+  - [2.2. Game Developer](#22-game-developer)
+    - [2.2.1. Register Game](#221-register-game)
+    - [2.2.2. Issue Token](#222-issue-token)
+    - [2.2.3. Register Event](#223-register-event)
+    - [2.2.4. Token Management](#224-token-management)
+  - [2.3. Gamer](#23-gamer)
+    - [2.3.1. Play Game, Get Tokens](#231-play-game-get-tokens)
+    - [2.3.2. Token Usage](#232-token-usage)
       - [2.3.2.1. Escrow Pool](#2321-escrow-pool)
       - [2.3.2.2. In App Usage](#2322-in-app-usage)
       - [2.3.2.3. Claim GXC](#2323-claim-gxc)
       - [2.3.2.4. Sell Token](#2324-sell-token)
-    + [2.3.3. GXC Usage](#233-gxc-usage)
+    - [2.3.3. GXC Usage](#233-gxc-usage)
       - [2.3.3.1. Vote for Block Producers](#2331-vote-for-block-producers)
       - [2.3.3.2. Vote for Games](#2332-vote-for-games)
       - [2.3.3.3. Buy Token](#2333-buy-token)
-    + [2.4. Game Use Case](#24-game-use-case)
-    + [2.4.1. Single Play Game](#241-single-play-game)
-    + [2.4.2. Multi Play Game](#242-multi-play-game)
-    + [2.4.3. Crypto Game](#243-crypto-game)
-  * [2.5. Token Economy](#25-token-economy)
+    - [2.4. Game Use Case](#24-game-use-case)
+    - [2.4.1. Single Play Game](#241-single-play-game)
+    - [2.4.2. Multi Play Game](#242-multi-play-game)
+    - [2.4.3. Crypto Game](#243-crypto-game)
+  - [2.5. Token Economy](#25-token-economy)
 - [3. Blockchain](#3-blockchain)
-  * [3.1. DPoS](#31-dpos)
-  * [3.2. Native Action and System Contract](#32-native-action-and-system-contract)
-    + [3.2.1. Make the common case cheap, fast.](#321-make-the-common-case-cheap--fast)
-    + [3.2.2. Limitations of EOSIO’s Contract](#322-limitations-of-eosio-s-contract)
-    + [3.2.3. Characteristics of GXC Native Action](#323-characteristics-of-gxc-native-action)
-    + [3.2.4. Native Action Rule](#324-native-action-rule)
-    + [3.2.5. Type of Native Action](#325-type-of-native-action)
+  - [3.1. DPoS](#31-dpos)
+  - [3.2. Native Action and System Contract](#32-native-action-and-system-contract)
+    - [3.2.1. Make the common case cheap, fast.](#321-make-the-common-case-cheap-fast)
+    - [3.2.2. Limitations of EOSIO’s Contract](#322-limitations-of-eosios-contract)
+    - [3.2.3. Characteristics of GXC Native Action](#323-characteristics-of-gxc-native-action)
+    - [3.2.4. Native Action Rule](#324-native-action-rule)
+    - [3.2.5. Type of Native Action](#325-type-of-native-action)
       - [3.2.5.1. Game Contract](#3251-game-contract)
       - [3.2.5.2. Token Model](#3252-token-model)
-      - [3.2.5.3. 탈중앙화 거래소(DEX)](#3253----------dex-)
-    + [3.2.6. Fees](#326-fees)
-    + [3.2.7. 예외 상황에 대한 컨트롤](#327--------------)
-  * [3.3. Accounts](#33-accounts)
-    + [3.3.1. Permission](#331-permission)
-    + [3.3.2. Anonymous Account](#332-anonymous-account)
-  * [3.4. Make the rare case correct.](#34-make-the-rare-case-correct)
-  * [3.5. Sidechain](#35-sidechain)
+      - [3.2.5.3. 탈중앙화 거래소(DEX)](#3253-%ED%83%88%EC%A4%91%EC%95%99%ED%99%94-%EA%B1%B0%EB%9E%98%EC%86%8Cdex)
+    - [3.2.6. Fees](#326-fees)
+    - [3.2.7. 예외 상황에 대한 컨트롤](#327-%EC%98%88%EC%99%B8-%EC%83%81%ED%99%A9%EC%97%90-%EB%8C%80%ED%95%9C-%EC%BB%A8%ED%8A%B8%EB%A1%A4)
+  - [3.3. Accounts](#33-accounts)
+    - [3.3.1. Permission](#331-permission)
+    - [3.3.2. Anonymous Account](#332-anonymous-account)
+  - [3.4. Make the rare case correct.](#34-make-the-rare-case-correct)
+  - [3.5. Sidechain](#35-sidechain)
 - [4. Governance](#4-governance)
-  * [4.1. Block Producer](#41-block-producer)
-    + [4.1.1. 구성](#411---)
-    + [4.1.2. 역할](#412---)
-      - [4.1.2.1. 블록생성](#4121-----)
-      - [4.1.2.2. Resource 제공](#4122-resource---)
-    + [4.1.3. 권한](#413---)
+  - [4.1. Block Producer](#41-block-producer)
+    - [4.1.1. 구성](#411-%EA%B5%AC%EC%84%B1)
+    - [4.1.2. 역할](#412-%EC%97%AD%ED%95%A0)
+      - [4.1.2.1. 블록생성](#4121-%EB%B8%94%EB%A1%9D%EC%83%9D%EC%84%B1)
+      - [4.1.2.2. Resource 제공](#4122-resource-%EC%A0%9C%EA%B3%B5)
+    - [4.1.3. 권한](#413-%EA%B6%8C%ED%95%9C)
       - [4.1.3.1. Parameter](#4131-parameter)
-      - [4.1.3.2. 계정정지](#4132-----)
+      - [4.1.3.2. 계정정지](#4132-%EA%B3%84%EC%A0%95%EC%A0%95%EC%A7%80)
       - [4.1.3.3. Token Pause for abusing games](#4133-token-pause-for-abusing-games)
-  * [4.2. GXC Holders](#42-gxc-holders)
-    + [4.2.1. Voting](#421-voting)
+  - [4.2. GXC Holders](#42-gxc-holders)
+    - [4.2.1. Voting](#421-voting)
       - [4.2.1.1. Voting for Block Producers](#4211-voting-for-block-producers)
       - [4.2.1.2. Voting for Games](#4212-voting-for-games)
-  * [4.3. Work Proposal](#43-work-proposal)
-  * [4.4. Inflation](#44-Inflation)
-    + [4.4.1 Inflation의 분배](#441-Inflation----)
+  - [4.3. Work Proposal](#43-work-proposal)
+  - [4.4. Inflation](#44-inflation)
+    - [4.4.1. Inflation의 분배](#441-inflation%EC%9D%98-%EB%B6%84%EB%B0%B0)
 - [5. Products](#5-products)
-  * [5.1. GXC.World](#51-gxcworld)
-    + [5.1.1. Wallet](#511-wallet)
-    + [5.1.2. Gaming Portal](#512-gaming-portal)
-    + [5.1.3. DEX](#513-dex)
-  * [5.2. Dev.World](#52-devworld)
-    + [5.2.1. 관리공간](#521-----)
-    + [5.2.2. 개발 도구](#522------)
-  * [5.3. Chain.World](#53-chainworld)
+  - [5.1. GXC.World](#51-gxcworld)
+    - [5.1.1. Wallet](#511-wallet)
+    - [5.1.2. Gaming Portal](#512-gaming-portal)
+    - [5.1.3. DEX](#513-dex)
+  - [5.2. Dev.World](#52-devworld)
+    - [5.2.1. 관리공간](#521-%EA%B4%80%EB%A6%AC%EA%B3%B5%EA%B0%84)
+    - [5.2.2. 개발 도구](#522-%EA%B0%9C%EB%B0%9C-%EB%8F%84%EA%B5%AC)
+  - [5.3. Chain.World](#53-chainworld)
 - [6. Summary](#6-summary)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+# 1. 배경
 
-# 1. Tokenize your game, Monetize your play!
+**Tokenize your game, Monetize your play!**
 
-유희하는 인간(Homo Ludens)이라는 말처럼, 인간은 놀이를 향유하며 진화해왔다. 
-새로운 매체는 새로운 놀이를 낳는다. 멀게는 고대의 탈 것이라는 개념에서 부터 가깝게는 컴퓨터, 인터넷, 게임 등을 들 수 있다. 
-그리고 오늘날, 우리는 또 다른 놀이의 흐름을 감지할 수 있다. 바로 블록체인이라는 매체를 매개로한 새로운 놀이이다. 
+1961년 최초의 컴퓨터 게임인 <Spacewar!>의 등장 이후 게임 시장은 전례 없이 빠른 속도로 성장해왔다. 군사, 과학 목적의 고속 계산 장치인 컴퓨터를 심심풀이 용도로 활용하기 위해 처음 만들어진 게임이 이제는 게임을 원활하게 작동시킬 수 있도록 하드웨어 개발을 선도하고 있다. 화면상의 점을 상하좌우로 이동시키는 단순한 조작에 불과하던 게임은 이제 자체적인 경제 시스템을 갖추고 디지털 자산인 게임 화폐와 아이템을 거래하며, 이를 현실의 통화*Fiat money*로까지 교환하는 거대한 생태계를 구축했다.
 
-GameXCoin은 블록체인을 이용한 이러한 새로운 놀이인 게임이 블록체인 위에서 '가장 잘' 동작할 수 있는 플랫폼이 되고자 한다.
+그러나 현재의 게임 시장은 제작사, 유통사, 유저의 한 방향으로만 이어진 일방적 관계로 제한되어 있다. 게임 유저는 다른 생태계에선 찾아보기 힘든 수준의 적극적 참여자지만 가장 수동적인 역할을 맡아 게임을 구매할 것인가, 플레이 할 것인가 등 소극적 의사 표현 밖에 할 수 없다. 블록체인을 활용한 암호 경제는 **암호 화폐인 토큰**과 **참여자들의 합의**로 운영되는 특징을 갖는다. 토큰으로 치환 가능한 디지털 자산과 적극적 참여층을 이미 가진 게임 시장은 블록체인과 결합하여 새로운 생태계를 낳을 가능성이 가장 높은 분야이다.
 
-이 네트워크 상에서 Block Producer, 게임 개발자, 게이머, 코인 홀더는 각자의 이익을 추구하며 네트워크에 참여하고, 이는 네트워크 전체 가치 상승을 가져와 한단계 더 가치있는 네트워크 형성에 이바지한다. 이 페이퍼는 이러한 로직이 어떻게 구성이 되며 어떻게 가능하게 할 지에 대해, GameXCoin의 구성요소인 Ecosystem, Blockchain, Governance, 그리고 Products에 대해 기술하고자 한다.
+자유 시장에서 각 참여자가 자신의 이익을 추구하는 가운데 시장 효율이 달성되는 것처럼 블록체인 네트워크에서는 게임 유저, 게임 제작자, 토큰 보유자*token holder*, 블록 생성자*block producer*가 각자 자신의 이익에 따라 행동하는 일이 네트워크를 성장시켜 가치를 증대시킨다. 참여자 간 합의에 따라 네트워크 성장에 기여하는 행위는 보상을 받고 악의적인 행동은 경제적인 불이익을 통해 제한된다.
 
+**GameXCoin**은 게임과 잘 결합된*well-integrated* 블록체인 플랫폼을 제공하고자 한다. 플랫폼 위에 조성된 새로운 게임 생태계에서 각 참여자들은 기존에 없던 새로운 가치(실시간성, 양방향성, 상호연결성, 경제적 이익 분배, 신뢰성 등)를 누리고 공유한다. 본 문서는 GameXCoin의 작동 원리 및 각 구성 요소인 생태계, 블록체인, 거버넌스, 제품에 관해 기술하고 있다.
 
-> **Disclaimer:** 이 청서는 GXCIO 및 GameXCoin의 로드맵, 기능에 관한 정보를 제공하고자 참고 목적으로 작성된 것입니다. 이 청서는 독자에게 GameXCoin에 대한 투자를 권유하기 위한 것이 아니며 이러한 목적과는 전혀 무관함을 분명히 합니다.
-이 청서는 작성 당시의 상태를 기준으로(As-Is) 작성되었으며, 청서에 작성된 내용이 백서나, 홈페이지에서 제공되는 내용과 상반되는 내용이 있을 경우, 청서의 내용을 우선함을 원칙으로 합니다. 블록체인벤처스는 독자가 이 청서를 읽는 시점 및 그 장래에 대하여 로드맵에 계획된 GameXCoin 프로젝트의 결론, 일정 및 성과를 포함하여 백서상에 기재된 어떠한 내용에 관하여도 그 내용이 정확하거나 적절함을 보증하지 않습니다. 이 청서는 블록체인벤처스의 정책 또는 의사결정에 따라 그 내용이 변경될 수 있습니다.
 
 
 # 2. GameXCoin Ecosystem
 
-- Staking은 Voting에 참여하기 위해 GXC코인(이하GXC)을 메인 네트워크에 잠시 맡기는 행위를 의미한다. Staking된 GXC는 일정시간이 지나야 되돌려 받을 수 있다.
-- 게임Token(이하Token)은 GameXCoin 네트워크에서 개발자가 자체적으로 발행하는 통화를 의미한다. 
-- 에스크로 풀(Escrow Pool)은 GXC와 교환 비율이 고정된 토큰을 발행할 때, 게임사가 넣은 GXC가 보관되는 양을 의미한다.
-- 리저브 풀(Reserve Pool)은 게이머의 활동 보상을 위해, 인플레이션의 일부가 게임별로 저장되는 양을 의미한다.
+- 예치*stake*는 투표에 참여하기 위해 **GXC 코인**(이하 GXC)을 메인 네트워크에 맡기는 행위를 의미한다. 예치한 GXC는 일정 시간이 지나면 돌려받을 수 있다.
+- **게임 토큰**(이하 토큰)은 GameXCoin 네트워크에서 게임 제작자가 자체적으로 발행하는 통화를 의미한다.
+- 에스크로 풀*Escrow Pool*은 GXC와 교환 비율이 고정된 토큰을 발행할 때, 기초 자산으로 사용하기 위해 게임사가 입금한 GXC가 보관되는 영역을 의미한다.
+- 리저브 풀*Reserve Pool*은 유저의 네트워크 참여에 대한 보상을 위해 인플레이션의 일부가 게임별로 저장되는 영역을 의미한다.
 
 ![](https://lh5.googleusercontent.com/BrY7FC5_rReUYxIFSYzNLG3ICIewcs-2x_OSxXfM8jqhLRRRTF3s3ci98KtoZGp8mLzYIKlCYPlue8yFCQdBYNCDlqusmNg1nrM6h21Y1eeSfvg1feY8JnONLjlhhdD2fGs2Fvvh)
 
